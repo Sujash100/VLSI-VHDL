@@ -1,0 +1,3 @@
+verilog isim_temp "Full_Subtractor.v"
+verilog isim_temp "Full_Subtractor_Testbench.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

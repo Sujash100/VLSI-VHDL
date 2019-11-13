@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Multiplier_4x4/Multiplier_4x4.xst" -ofn "H:/VLSI Final Codes/Multiplier_4x4/Multiplier_4x4.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Multiplier_4x4/Multiplier_4x4.xst" -ofn "H:/VLSI Final Codes/Multiplier_4x4/Multiplier_4x4.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Multiplier_4x4/Multiplier_4x4.xst" -ofn "H:/VLSI Final Codes/Multiplier_4x4/Multiplier_4x4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Multiplier_4x4.ngc" Multiplier_4x4.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Multiplier_4x4_map.ncd Multiplier_4x4.ngd Multiplier_4x4.pcf 
+par -w -intstyle ise -ol high -t 1 Multiplier_4x4_map.ncd Multiplier_4x4.ncd Multiplier_4x4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Multiplier_4x4.twx Multiplier_4x4.ncd -o Multiplier_4x4.twr Multiplier_4x4.pcf 

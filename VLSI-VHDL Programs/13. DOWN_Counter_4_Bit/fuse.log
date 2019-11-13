@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o H:/VLSI Final Codes/DOWN_Counter_4_Bit/downcounter_testbench_isim_beh.exe -prj H:/VLSI Final Codes/DOWN_Counter_4_Bit/downcounter_testbench_beh.prj work.downcounter_testbench work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "H:/VLSI Final Codes/DOWN_Counter_4_Bit/down_counter.v" into library work
+Analyzing Verilog file "H:/VLSI Final Codes/DOWN_Counter_4_Bit/downcounter_testbench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 159888 KB
+Fuse CPU Usage: 312 ms
+Compiling module down_counter
+Compiling module downcounter_testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable H:/VLSI Final Codes/DOWN_Counter_4_Bit/downcounter_testbench_isim_beh.exe
+Fuse Memory Usage: 164340 KB
+Fuse CPU Usage: 327 ms

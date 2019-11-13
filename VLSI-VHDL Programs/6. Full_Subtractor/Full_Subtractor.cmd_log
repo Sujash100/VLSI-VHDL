@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Full_Subtractor/Full_Subtractor.xst" -ofn "H:/VLSI Final Codes/Full_Subtractor/Full_Subtractor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Full_Subtractor.ngc" Full_Subtractor.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Full_Subtractor_map.ncd Full_Subtractor.ngd Full_Subtractor.pcf 
+par -w -intstyle ise -ol high -t 1 Full_Subtractor_map.ncd Full_Subtractor.ncd Full_Subtractor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Full_Subtractor.twx Full_Subtractor.ncd -o Full_Subtractor.twr Full_Subtractor.pcf 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Full_Subtractor/Full_Subtractor.xst" -ofn "H:/VLSI Final Codes/Full_Subtractor/Full_Subtractor.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Full_Subtractor/Full_Subtractor.xst" -ofn "H:/VLSI Final Codes/Full_Subtractor/Full_Subtractor.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Full_Subtractor/Full_Subtractor.xst" -ofn "H:/VLSI Final Codes/Full_Subtractor/Full_Subtractor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Full_Subtractor.ngc" Full_Subtractor.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Full_Subtractor_map.ncd Full_Subtractor.ngd Full_Subtractor.pcf 
+par -w -intstyle ise -ol high -t 1 Full_Subtractor_map.ncd Full_Subtractor.ncd Full_Subtractor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Full_Subtractor.twx Full_Subtractor.ncd -o Full_Subtractor.twr Full_Subtractor.pcf 

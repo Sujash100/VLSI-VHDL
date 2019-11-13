@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.xst" -ofn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.xst" -ofn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.xst" -ofn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.xst" -ofn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.xst" -ofn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.xst" -ofn "H:/VLSI Final Codes/Subtractor_4_Bit/Subtractor_4_Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Subtractor_4_Bit.ngc" Subtractor_4_Bit.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Subtractor_4_Bit_map.ncd Subtractor_4_Bit.ngd Subtractor_4_Bit.pcf 
+par -w -intstyle ise -ol high -t 1 Subtractor_4_Bit_map.ncd Subtractor_4_Bit.ncd Subtractor_4_Bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Subtractor_4_Bit.twx Subtractor_4_Bit.ncd -o Subtractor_4_Bit.twr Subtractor_4_Bit.pcf 

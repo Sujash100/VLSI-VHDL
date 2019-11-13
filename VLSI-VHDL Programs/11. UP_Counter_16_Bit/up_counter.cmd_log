@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/UP_Counter_16_Bit/up_counter.xst" -ofn "H:/VLSI Final Codes/UP_Counter_16_Bit/up_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "up_counter.ngc" up_counter.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o up_counter_map.ncd up_counter.ngd up_counter.pcf 
+par -w -intstyle ise -ol high -t 1 up_counter_map.ncd up_counter.ncd up_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml up_counter.twx up_counter.ncd -o up_counter.twr up_counter.pcf 

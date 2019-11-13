@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/DOWN_Counter_4_Bit/down_counter.xst" -ofn "H:/VLSI Final Codes/DOWN_Counter_4_Bit/down_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "down_counter.ngc" down_counter.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o down_counter_map.ncd down_counter.ngd down_counter.pcf 
+par -w -intstyle ise -ol high -t 1 down_counter_map.ncd down_counter.ncd down_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml down_counter.twx down_counter.ncd -o down_counter.twr down_counter.pcf 

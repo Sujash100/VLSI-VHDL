@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit_Testbench_isim_beh.exe" -prj "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit_Testbench_beh.prj" "work.Adder_4_Bit_Testbench" "work.glbl" 

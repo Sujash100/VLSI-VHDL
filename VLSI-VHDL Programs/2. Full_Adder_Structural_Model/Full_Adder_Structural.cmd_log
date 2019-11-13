@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Full_Adder_Structural_Model/Full_Adder_Structural.xst" -ofn "H:/VLSI Final Codes/Full_Adder_Structural_Model/Full_Adder_Structural.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Full_Adder_Structural.ngc" Full_Adder_Structural.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Full_Adder_Structural_map.ncd Full_Adder_Structural.ngd Full_Adder_Structural.pcf 
+par -w -intstyle ise -ol high -t 1 Full_Adder_Structural_map.ncd Full_Adder_Structural.ncd Full_Adder_Structural.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Full_Adder_Structural.twx Full_Adder_Structural.ncd -o Full_Adder_Structural.twr Full_Adder_Structural.pcf 

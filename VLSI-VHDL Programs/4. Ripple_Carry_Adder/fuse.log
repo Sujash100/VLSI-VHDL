@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder_testbench_isim_beh.exe -prj H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder_testbench_beh.prj work.BCD_Adder_testbench work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "H:/VLSI Final Codes/Ripple_Carry_Adder/Adder_1_Bit.v" into library work
+Analyzing Verilog file "H:/VLSI Final Codes/Ripple_Carry_Adder/Adder_4_Bit.v" into library work
+Analyzing Verilog file "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.v" into library work
+Analyzing Verilog file "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder_testbench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160336 KB
+Fuse CPU Usage: 296 ms
+Compiling module Adder_1_Bit
+Compiling module Adder_4_Bit
+Compiling module BCD_Adder
+Compiling module BCD_Adder_testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder_testbench_isim_beh.exe
+Fuse Memory Usage: 164788 KB
+Fuse CPU Usage: 312 ms

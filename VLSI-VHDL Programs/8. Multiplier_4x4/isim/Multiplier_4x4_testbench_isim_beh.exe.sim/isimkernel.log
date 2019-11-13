@@ -1,0 +1,28 @@
+Command line:
+   Multiplier_4x4_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52707
+
+Fri Feb 01 20:24:01 2019
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 872.301 Meg
+
+ Total Signals          : 150
+ Total Nets             : 123
+ Total Signal Drivers   : 81
+ Total Blocks           : 18
+ Total Primitive Blocks : 13
+ Total Processes        : 83
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 211
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 872.301 Meg
+
+Fri Feb 01 20:24:21 2019
+

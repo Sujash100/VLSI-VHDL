@@ -1,0 +1,28 @@
+Command line:
+   Comprator_3_Bit_Testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50673
+
+Fri Feb 01 15:10:47 2019
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 871.776 Meg
+
+ Total Signals          : 43
+ Total Nets             : 44
+ Total Signal Drivers   : 32
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 34
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 130
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 1187.92 Meg
+
+Fri Feb 01 15:11:25 2019
+

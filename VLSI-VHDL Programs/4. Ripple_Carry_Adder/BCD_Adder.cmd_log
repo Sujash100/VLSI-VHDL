@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.xst" -ofn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.xst" -ofn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.xst" -ofn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.xst" -ofn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.xst" -ofn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.xst" -ofn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.xst" -ofn "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "BCD_Adder.ngc" BCD_Adder.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o BCD_Adder_map.ncd BCD_Adder.ngd BCD_Adder.pcf 
+par -w -intstyle ise -ol high -t 1 BCD_Adder_map.ncd BCD_Adder.ncd BCD_Adder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BCD_Adder.twx BCD_Adder.ncd -o BCD_Adder.twr BCD_Adder.pcf 

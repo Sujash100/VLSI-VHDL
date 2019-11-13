@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "H:/VLSI Final Codes/Multiplier_4x4/Multiplier_4x4_testbench_isim_beh.exe" -prj "H:/VLSI Final Codes/Multiplier_4x4/Multiplier_4x4_testbench_beh.prj" "work.Multiplier_4x4_testbench" "work.glbl" 

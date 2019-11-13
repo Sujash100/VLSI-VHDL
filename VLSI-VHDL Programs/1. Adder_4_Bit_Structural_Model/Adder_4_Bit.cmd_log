@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.xst" -ofn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.xst" -ofn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.xst" -ofn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.xst" -ofn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.xst" -ofn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.syr" 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.xst" -ofn "H:/VLSI Final Codes/Adder_4_Bit_Structural_Model/Adder_4_Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Adder_4_Bit.ngc" Adder_4_Bit.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Adder_4_Bit_map.ncd Adder_4_Bit.ngd Adder_4_Bit.pcf 
+par -w -intstyle ise -ol high -t 1 Adder_4_Bit_map.ncd Adder_4_Bit.ncd Adder_4_Bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Adder_4_Bit.twx Adder_4_Bit.ncd -o Adder_4_Bit.twr Adder_4_Bit.pcf 

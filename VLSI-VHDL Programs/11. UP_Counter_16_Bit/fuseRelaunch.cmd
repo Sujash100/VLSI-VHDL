@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "H:/VLSI Final Codes/UP_Counter_16_Bit/up_counter_testbench_isim_beh.exe" -prj "H:/VLSI Final Codes/UP_Counter_16_Bit/up_counter_testbench_beh.prj" "work.up_counter_testbench" "work.glbl" 

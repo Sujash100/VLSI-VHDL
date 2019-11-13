@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Comprator_3_Bit/Comprator.xst" -ofn "H:/VLSI Final Codes/Comprator_3_Bit/Comprator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Comprator.ngc" Comprator.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Comprator_map.ncd Comprator.ngd Comprator.pcf 
+par -w -intstyle ise -ol high -t 1 Comprator_map.ncd Comprator.ncd Comprator.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Comprator.twx Comprator.ncd -o Comprator.twr Comprator.pcf 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Comprator_3_Bit/Comprator.xst" -ofn "H:/VLSI Final Codes/Comprator_3_Bit/Comprator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Comprator.ngc" Comprator.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Comprator_map.ncd Comprator.ngd Comprator.pcf 
+par -w -intstyle ise -ol high -t 1 Comprator_map.ncd Comprator.ncd Comprator.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Comprator.twx Comprator.ncd -o Comprator.twr Comprator.pcf 
+xst -intstyle ise -ifn "H:/VLSI Final Codes/Comprator_3_Bit/Comprator.xst" -ofn "H:/VLSI Final Codes/Comprator_3_Bit/Comprator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-ft256-5 "Comprator.ngc" Comprator.ngd  
+map -intstyle ise -p xc3s250e-ft256-5 -cm area -ir off -pr off -c 100 -o Comprator_map.ncd Comprator.ngd Comprator.pcf 
+par -w -intstyle ise -ol high -t 1 Comprator_map.ncd Comprator.ncd Comprator.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Comprator.twx Comprator.ncd -o Comprator.twr Comprator.pcf 

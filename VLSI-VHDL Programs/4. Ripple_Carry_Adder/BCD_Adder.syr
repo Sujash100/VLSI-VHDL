@@ -1,0 +1,322 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: BCD_Adder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BCD_Adder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BCD_Adder"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-ft256
+
+---- Source Options
+Top Module Name                    : BCD_Adder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Adder_1_Bit.v" in library work
+Compiling verilog file "Adder_4_Bit.v" in library work
+Module <Adder_1_Bit> compiled
+Compiling verilog file "BCD_Adder.v" in library work
+Module <Adder_4_Bit> compiled
+Module <BCD_Adder> compiled
+No errors in compilation
+Analysis of file <"BCD_Adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <BCD_Adder> in library <work>.
+
+Analyzing hierarchy for module <Adder_4_Bit> in library <work>.
+
+Analyzing hierarchy for module <Adder_1_Bit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <BCD_Adder>.
+Module <BCD_Adder> is correct for synthesis.
+ 
+Analyzing module <Adder_4_Bit> in library <work>.
+Module <Adder_4_Bit> is correct for synthesis.
+ 
+Analyzing module <Adder_1_Bit> in library <work>.
+Module <Adder_1_Bit> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Adder_1_Bit>.
+    Related source file is "Adder_1_Bit.v".
+    Found 1-bit xor2 for signal <S>.
+    Found 1-bit xor2 for signal <x1>.
+Unit <Adder_1_Bit> synthesized.
+
+
+Synthesizing Unit <Adder_4_Bit>.
+    Related source file is "Adder_4_Bit.v".
+Unit <Adder_4_Bit> synthesized.
+
+
+Synthesizing Unit <BCD_Adder>.
+    Related source file is "BCD_Adder.v".
+Unit <BCD_Adder> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <BCD_Adder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BCD_Adder, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : BCD_Adder.ngr
+Top Level Output File Name         : BCD_Adder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 13
+#      LUT3                        : 9
+#      LUT4                        : 4
+# IO Buffers                       : 14
+#      IBUF                        : 9
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250eft256-5 
+
+ Number of Slices:                        7  out of   2448     0%  
+ Number of 4 input LUTs:                 13  out of   4896     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    172     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 12.469ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 182 / 5
+-------------------------------------------------------------------------
+Delay:               12.469ns (Levels of Logic = 9)
+  Source:            B<0> (PAD)
+  Destination:       S<1> (PAD)
+
+  Data Path: B<0> to S<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.532  B_0_IBUF (B_0_IBUF)
+     LUT3:I0->O            3   0.612   0.520  u1/u1/Cout1 (u1/C1)
+     LUT3:I1->O            2   0.612   0.449  u1/u2/Cout1 (u1/C2)
+     LUT3:I1->O            2   0.612   0.410  u1/u3/Cout1 (u1/C3)
+     LUT3:I2->O            3   0.612   0.603  u1/u4/Mxor_S_Result1 (ACC<3>)
+     LUT3:I0->O            1   0.612   0.387  x3_SW0 (N5)
+     LUT4:I2->O            4   0.612   0.651  x3 (x3)
+     LUT4:I0->O            1   0.612   0.357  u5/u2/Mxor_x1_Result1 (S_1_OBUF)
+     OBUF:I->O                 3.169          S_1_OBUF (S<1>)
+    ----------------------------------------
+    Total                     12.469ns (8.559ns logic, 3.910ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.19 secs
+ 
+--> 
+
+Total memory usage is 238680 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

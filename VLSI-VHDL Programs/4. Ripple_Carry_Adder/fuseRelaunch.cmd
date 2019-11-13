@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder_testbench_isim_beh.exe" -prj "H:/VLSI Final Codes/Ripple_Carry_Adder/BCD_Adder_testbench_beh.prj" "work.BCD_Adder_testbench" "work.glbl" 
